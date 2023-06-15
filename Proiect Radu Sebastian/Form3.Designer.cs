@@ -35,6 +35,7 @@ namespace Proiect_Radu_Sebastian
             this.meniuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salvareToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimareToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.DELETEdb = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -56,9 +57,9 @@ namespace Proiect_Radu_Sebastian
             this.AfisareSondaj.BackColor = System.Drawing.Color.LightCyan;
             this.AfisareSondaj.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AfisareSondaj.ForeColor = System.Drawing.Color.DimGray;
-            this.AfisareSondaj.Location = new System.Drawing.Point(166, 46);
+            this.AfisareSondaj.Location = new System.Drawing.Point(12, 56);
             this.AfisareSondaj.Name = "AfisareSondaj";
-            this.AfisareSondaj.Size = new System.Drawing.Size(857, 78);
+            this.AfisareSondaj.Size = new System.Drawing.Size(887, 78);
             this.AfisareSondaj.TabIndex = 1;
             this.AfisareSondaj.Text = "Afisare Sondaj";
             this.AfisareSondaj.UseVisualStyleBackColor = false;
@@ -97,12 +98,26 @@ namespace Proiect_Radu_Sebastian
             this.imprimareToolStripMenuItem1.Size = new System.Drawing.Size(225, 26);
             this.imprimareToolStripMenuItem1.Text = "Imprimare";
             // 
+            // DELETEdb
+            // 
+            this.DELETEdb.BackColor = System.Drawing.Color.LightCyan;
+            this.DELETEdb.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DELETEdb.ForeColor = System.Drawing.Color.DimGray;
+            this.DELETEdb.Location = new System.Drawing.Point(921, 56);
+            this.DELETEdb.Name = "DELETEdb";
+            this.DELETEdb.Size = new System.Drawing.Size(259, 78);
+            this.DELETEdb.TabIndex = 5;
+            this.DELETEdb.Text = "Stergere BD";
+            this.DELETEdb.UseVisualStyleBackColor = false;
+            this.DELETEdb.Click += new System.EventHandler(this.DELETEdb_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1192, 679);
+            this.Controls.Add(this.DELETEdb);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.AfisareSondaj);
             this.Controls.Add(this.dataGridView1);
@@ -125,5 +140,6 @@ namespace Proiect_Radu_Sebastian
         private System.Windows.Forms.ToolStripMenuItem meniuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salvareToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem imprimareToolStripMenuItem1;
+        private System.Windows.Forms.Button DELETEdb;
     }
 }

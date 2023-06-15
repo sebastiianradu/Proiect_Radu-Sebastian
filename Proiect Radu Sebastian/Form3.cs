@@ -78,5 +78,26 @@ namespace Proiect_Radu_Sebastian
                 MessageBox.Show("Fisierul CSV a fost salvat cu succes");
             }
         }
+
+        private void DELETEdb_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Server=(LocalDB)\\MSSQLLocalDB;DataBase=DetaliiUtilizator;Trusted_Connection=True;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("DELETE FROM DateUtilizatori", connection);
+
+                // comanda de stergere
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("Stergerea a fost efectuata cu succes!");
+
+                connection.Close();
+            }
+
+            Console.ReadLine();
+        }
     }
 }
