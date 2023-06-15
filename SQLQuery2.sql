@@ -1,0 +1,10 @@
+﻿CREATE TABLE DateUtilizatori (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Nume NVARCHAR(50) NOT NULL,
+    Prenume NVARCHAR(50) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    Economii INT
+)
+
+ALTER TABLE DateUtilizatori
+ALTER COLUMN Economii NUMBER;
